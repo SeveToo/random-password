@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>random-password</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f413087f9d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Random Password Generator App</h1>
+      <div class="boxOutput">
+        <p class="password">Create Password</p>
+        <div class="copy"><i class="far fa-clone"></i></div>
+      </div>
+      <div class="buttons">
+        <label class="active">Kind of chars</label>
+        <input checked type="checkbox" name="" id="az" />
+        <label for="az">a - z</label>
+        <input type="checkbox" name="" id="AZ" />
+        <label for="AZ">A - Z</label>
+        <input type="checkbox" name="" id="Numbers" />
+        <label for="Numbers">0 - 9</label>
+        <input type="checkbox" name="" id="specialMarks" />
+        <label for="specialMarks">! - +</label>
+      </div>
+      <div class="buttons">
+        <label class="active">How lenght</label>
+        <input type="radio" checked name="atest" id="sixchars" />
+        <label for="sixchars">4 - 6</label>
+        <input type="radio" name="atest" id="toTen" />
+        <label for="toTen">7 - 10</label>
+        <input type="radio" name="atest" id="toFifty" />
+        <label for="toFifty">11 - 15</label>
+        <button class="generateButton">Generate Password</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
